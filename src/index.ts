@@ -1,4 +1,2 @@
-// export * from './index.module';
-// export * from './index.service';
-
-console.log('index.ts');
+export * from './event-store.module-definition';
+export * from './event-store.types';
