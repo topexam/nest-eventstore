@@ -1,6 +1,6 @@
 {
   "name": "@topthithu/nest-eventstore",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A utility module to integrate eventstore with NestJS",
   "author": "An Nguyen Q. <ngquangan.dev@gmail.com>",
   "license": "MIT",
