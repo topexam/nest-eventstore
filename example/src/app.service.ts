@@ -1,8 +1,13 @@
 import { Injectable } from '@nestjs/common';
-
+import { EventStoreService } from '@topthithu/nest-eventstore';
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  constructor(private readonly eventStoreSrv: EventStoreService) {}
+
+  sendRequest(): Promise<any> {
+    return this.eventStoreSrv.appendEvent('demo-events', {
+      type: 'abc.created',
+      data: {},
+    });
   }
 }

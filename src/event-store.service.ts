@@ -13,7 +13,7 @@ import { EVENT_STORE_CONFIG_OPTIONS } from './event-store.module-definition';
 import { IEventStoreOptions } from './event-store.types';
 
 @Injectable()
-export default class EventStoreService {
+export class EventStoreService {
   private _esClient: EventStoreDBClient;
 
   constructor(@Inject(EVENT_STORE_CONFIG_OPTIONS) options: IEventStoreOptions) {
@@ -21,7 +21,7 @@ export default class EventStoreService {
       {
         endpoint: options.endpoint,
       },
-      undefined,
+      { insecure: options.insecure ?? false },
       options.userCredentials,
     );
   }
