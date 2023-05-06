@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { EventStoreModule } from '@topthithu/nest-eventstore';
+import { EventStoreModule } from 'nest-eventstore';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';

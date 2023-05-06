@@ -1,11 +1,14 @@
 {
-  "name": "@topthithu/nest-eventstore",
+  "name": "nest-eventstore",
   "version": "0.0.5",
   "description": "A utility module to integrate eventstore with NestJS",
   "author": "An Nguyen Q. <ngquangan.dev@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/topthithu/nest-eventstore",
   "bugs": {
     "url": "https://github.com/topthithu/nest-eventstore/issues"
@@ -76,6 +79,7 @@
     "testEnvironment": "node"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }

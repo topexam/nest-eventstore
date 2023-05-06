@@ -885,7 +885,7 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@topthithu/nest-eventstore@file:..":
+"nest-eventstore@file:..":
   version "0.0.1"
   dependencies:
     "@eventstore/db-client" "^4.0.0"

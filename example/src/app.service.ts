@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { EventStoreService } from '@topthithu/nest-eventstore';
+import { EventStoreService } from 'nest-eventstore';
 @Injectable()
 export class AppService {
   constructor(private readonly eventStoreSrv: EventStoreService) {}
